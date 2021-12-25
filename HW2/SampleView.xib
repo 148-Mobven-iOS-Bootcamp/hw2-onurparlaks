@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SampleView" customModule="HW2" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="bPT-fN-dzx"/>
+                <outlet property="textField" destination="G7D-lQ-c04" id="Bjk-ot-mOz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="457" height="229"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7D-lQ-c04">
+                    <rect key="frame" x="20" y="64" width="417" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="6pW-AL-gWc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1k-qP-vHV">
+                    <rect key="frame" x="20" y="119" width="417" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="I7S-GY-G1X"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Submit">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" systemColor="linkColor"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="onSubmitButtonTapped:" destination="-1" eventType="touchUpInside" id="XyR-am-e0T"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="U1k-qP-vHV" firstAttribute="top" secondItem="G7D-lQ-c04" secondAttribute="bottom" constant="20" id="QH3-Gp-AUY"/>
+                <constraint firstItem="G7D-lQ-c04" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="Scx-qB-jkN"/>
+                <constraint firstItem="G7D-lQ-c04" firstAttribute="leading" secondItem="U1k-qP-vHV" secondAttribute="leading" id="We9-nX-Ozl"/>
+                <constraint firstItem="G7D-lQ-c04" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="fgI-iZ-6Q7"/>
+                <constraint firstItem="G7D-lQ-c04" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="nqW-g9-Qic"/>
+                <constraint firstItem="G7D-lQ-c04" firstAttribute="trailing" secondItem="U1k-qP-vHV" secondAttribute="trailing" id="zTo-Xr-Ffr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="168.84057971014494" y="-109.48660714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
