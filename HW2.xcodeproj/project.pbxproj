@@ -18,6 +18,7 @@
 		33AB1CFA27770FF400788ED8 /* HW2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AB1CF927770FF400788ED8 /* HW2UITestsLaunchTests.swift */; };
 		33AB1D072777111D00788ED8 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33AB1D062777111D00788ED8 /* SampleView.xib */; };
 		33AB1D092777137600788ED8 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AB1D082777137600788ED8 /* SampleView.swift */; };
+		33AB1D0D27772EA500788ED8 /* SampleViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AB1D0C27772EA500788ED8 /* SampleViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		33AB1CF927770FF400788ED8 /* HW2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		33AB1D062777111D00788ED8 /* SampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
 		33AB1D082777137600788ED8 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
+		33AB1D0C27772EA500788ED8 /* SampleViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				33AB1D082777137600788ED8 /* SampleView.swift */,
 				33AB1D062777111D00788ED8 /* SampleView.xib */,
+				33AB1D0C27772EA500788ED8 /* SampleViewDelegate.swift */,
 				33AB1CD627770FEE00788ED8 /* AppDelegate.swift */,
 				33AB1CD827770FEE00788ED8 /* SceneDelegate.swift */,
 				33AB1CDA27770FEE00788ED8 /* ViewController.swift */,
@@ -268,6 +271,7 @@
 				33AB1D092777137600788ED8 /* SampleView.swift in Sources */,
 				33AB1CDB27770FEE00788ED8 /* ViewController.swift in Sources */,
 				33AB1CD727770FEE00788ED8 /* AppDelegate.swift in Sources */,
+				33AB1D0D27772EA500788ED8 /* SampleViewDelegate.swift in Sources */,
 				33AB1CD927770FEE00788ED8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

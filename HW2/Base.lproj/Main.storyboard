@@ -16,30 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJo-hy-3jv">
-                                <rect key="frame" x="0.0" y="55" width="414" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThQ-O9-POe">
                                 <rect key="frame" x="16" y="825" width="382" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9za-jv-FX8" customClass="SampleView" customModule="HW2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="160"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="tw5-Bn-b8w"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="9za-jv-FX8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1X9-th-aAJ"/>
+                            <constraint firstItem="9za-jv-FX8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3LT-jI-zuG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ThQ-O9-POe" secondAttribute="trailing" constant="16" id="TD4-bI-hHv"/>
                             <constraint firstItem="ThQ-O9-POe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="d5U-Kc-x2d"/>
+                            <constraint firstItem="9za-jv-FX8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="feS-KI-tAI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ThQ-O9-POe" secondAttribute="bottom" constant="16" id="qAa-cU-yJO"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="sampleView" destination="aJo-hy-3jv" id="6Ci-CE-0Gk"/>
+                        <outlet property="sampleView" destination="9za-jv-FX8" id="0Rj-WG-rsc"/>
+                        <outlet property="updatedLabel" destination="ThQ-O9-POe" id="aE0-v3-mIs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

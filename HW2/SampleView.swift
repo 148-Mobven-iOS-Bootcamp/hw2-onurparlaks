@@ -13,6 +13,8 @@ final class SampleView: UIView {
 
     @IBOutlet private var contentView: UIView!
     @IBOutlet private weak var textField: UITextField!
+    
+    weak var delegate:sampleViewDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,7 +34,8 @@ final class SampleView: UIView {
     }
 
     @IBAction func onSubmitButtonTapped(_ sender: UIButton) {
-        let text = textField.text
+        let text = textField.text ?? ""
+        delegate?.textChanged(text)
     }
 
 }
